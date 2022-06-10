@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+</head>
+
+<!--Navbar-->
+<nav>
+  <div class="nav-wrapper" style="background-color: #DD4A48;">
+    <a href="{% url 'home' %}" class="brand-logo"><i class="material-icons" style="font-style: normal;"><img src="{% static 'app/img/2.png' %}" alt=""></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="{% url 'busqueda' %}"><i class="fa fa-search" style="font-size: medium;"></i></a></li>
+      <li><a href="{% url 'InicioSesion' %}" style="font-size: medium; font-style: normal;">Iniciar Sesion</a></li>
+      <li><a href="{% url 'productos' %}" style="font-size: medium; font-style: normal;">Catálogo</a></li>
+      <li><a href="{% url 'carritodecompras' %}"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+    </ul>
+  </div>
+</nav>
+<!--Fondo de la página-->
+<br><br><br><br>
+<p style="text-align: center;"><img src="{% static 'app/img/logoscatalogo/arroz.png' %}" alt=""></p>
+<body style="background-image: url({% static 'app/img/fondotester.jpg' %});" >
+    
+  <br><br><br><br><br><br>
+    <div class="card" style="padding: 20px;width: 300px; left: 110px; position: absolute;">
+      <img class="card-img-top" src="{% static 'app/img/arroz/1.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Cuisine & Co</h4>
+        <p class="card-text">Arroz grado 1 largo delgado 1 kg <br>Precio: $841</p><br>
+        <a href="#" class="btn btn-danger" style="left: 40px;">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 750px;position: absolute;" >
+      <img class="card-img-top" src="{% static 'app/img/arroz/2.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Cuisine & Co</h4>
+        <p class="card-text">Arroz grado 2 largo delgado 1 kg<br>Precio: $756</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 430px; ">
+      <img class="card-img-top" src="{% static 'app/img/arroz/3.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Cuisine & Co</h4>
+        <p class="card-text">Arroz grado 1 grano largo y ancho 1 kg<br>Precio: $1.096</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 1070px;bottom: 482px; ">
+      <img class="card-img-top" src="{% static 'app/img/arroz/4.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Cuisine & Co</h4>
+        <p class="card-text">Arroz grado 2 grano largo y ancho 1 kg<br>Precio: $1.011</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <br><br>
+    <div class="card" style="padding: 20px;width: 300px; left: 110px;bottom: 485px;  ">
+      <img class="card-img-top" src="{% static 'app/img/arroz/5.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Cuisine & Co</h4>
+        <p class="card-text">Arroz integral grado 1 largo y ancho 1 kg <br>Precio: $1.104</p><br>
+        <a href="#" class="btn btn-danger" style="left: 40px;">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 750px;bottom: 966px; " >
+      <img class="card-img-top" src="{% static 'app/img/arroz/6.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Cuisine & Co</h4>
+        <p class="card-text">Arroz grado 1 grano largo y ancho 3 kg<br>Precio: $2.957</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 430px;bottom: 1450px; ">
+      <img class="card-img-top" src="{% static 'app/img/arroz/7.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Tucapel</h4>
+        <p class="card-text">Arroz grado 2 blue grano largo y delgado 1 kg<br>Precio: $1.700 (1 Unidad)</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 1070px;bottom: 1929px; ">
+      <img class="card-img-top" src="{% static 'app/img/arroz/8.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Tucapel</h4>
+        <p class="card-text">Arroz grado 2 grano largo y ancho 1 kg<br>Precio: $1.349</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+<!--Footer-->
+<footer class="page-footer" id="footers" style="background-color: #DD4A48;">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text"><b>Acerca de Almacen YUYITOS</b></h5>
+        <a href="{% url 'quienessomos' %}"><p class="grey-text text-lighten-4"><H6 style="color: white;">¿Quienes Somos?</H6></p></a>
+        <a href=""><p class="grey-text text-lighten-4"><H6 style="color: white;">Términos y condiciones</H6></p></a>
+        <a href=""><p class="grey-text text-lighten-4"><H6 style="color: white;">Politica de privacidad</H6></p></a>
+        <a href=""><p class="grey-text text-lighten-4"><H6 style="color: white;">Información legal</H6></p></a>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">¡Síguenos en instagram!</h5>
+        <ul>
+          <li><a class="fa fa-instagram" href="https://www.instagram.com/almacenyuyitos/" style="color: white; font-size: 20px;"></a></a>
+          <br><br><h5 class="white-text">¡Medios de Pago! <br> <br><p>- RedCompra <br><br></p></h5></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2022 Copyright Pagina Web
+    <a class="grey-text text-lighten-4 right" href="https://wa.me/+56994888066">¡Contáctanos!&nbsp;&nbsp;<p class="fa fa-whatsapp"></p></a>
+    </div>
+  </div>
+
+</footer>
+</body>
+
+</html>

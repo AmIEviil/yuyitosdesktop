@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+</head>
+
+<!--Navbar-->
+<nav>
+  <div class="nav-wrapper" style="background-color: #DD4A48;">
+    <a href="{% url 'home' %}" class="brand-logo"><i class="material-icons" style="font-style: normal;"><img src="{% static 'app/img/2.png' %}" alt=""></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="{% url 'busqueda' %}"><i class="fa fa-search" style="font-size: medium;"></i></a></li>
+      <li><a href="{% url 'InicioSesion' %}" style="font-size: medium; font-style: normal;">Iniciar Sesion</a></li>
+      <li><a href="{% url 'productos' %}" style="font-size: medium; font-style: normal;">Catálogo</a></li>
+      <li><a href="{% url 'carritodecompras' %}"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+    </ul>
+  </div>
+</nav>
+<!--Fondo de la página-->
+<br><br><br><br>
+<p style="text-align: center;"><img src="{% static 'app/img/logoscatalogo/confort.png' %}" alt=""></p>
+<body style="background-image: url({% static 'app/img/fondotester.jpg' %});" >
+    
+  <br><br><br><b><br><br> 
+    <div class="card" style="padding: 20px;width: 300px; left: 110px; position: absolute;">
+      <img class="card-img-top" src="{% static 'app/img/confort/1.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Confort</h4>
+        <p class="card-text">Papel higiénico doble hoja 6 un. 25 m<br>Precio: $1.749</p><br>
+        <a href="#" class="btn btn-danger" style="left: 40px;">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 750px;position: absolute;" >
+      <img class="card-img-top" src="{% static 'app/img/confort/2.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Swan</h4>
+        <p class="card-text">Papel higiénico doblemente blanco 25 m 6 un.<br>Precio: $1.499</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 430px; ">
+      <img class="card-img-top" src="{% static 'app/img/confort/3.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Family Care</h4>
+        <p class="card-text">Papel higiénico doble hoja 25 m 24 un.<br>Precio: $5.839</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 1070px;bottom: 462px; ">
+      <img class="card-img-top" src="{% static 'app/img/confort/4.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Confort</h4>
+        <p class="card-text">Papel higiénico doble hoja 40 un. 25 m<br>Precio: $10.990</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <br><br>
+    <div class="card" style="padding: 20px;width: 300px; left: 110px;bottom: 485px;  ">
+      <img class="card-img-top" src="{% static 'app/img/confort/5.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Elite</h4>
+        <p class="card-text">Papel higiénico Ultra doble hoja 8 un. 50 m c/u<br>Precio: $5.890</p><br>
+        <a href="#" class="btn btn-danger" style="left: 40px;">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 750px;bottom: 950px; " >
+      <img class="card-img-top" src="{% static 'app/img/confort/6.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Favorita</h4>
+        <p class="card-text">Papel higiénico sensación DH 6 un. 25 m<br>Precio: $1.490</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 430px;bottom: 1412px; ">
+      <img class="card-img-top" src="{% static 'app/img/confort/7.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Scott</h4>
+        <p class="card-text">Papel Higiénico Scott Rindemax 25 m 8 un.<br>Precio: $2.390</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 1070px;bottom: 1915px; ">
+      <img class="card-img-top" src="{% static 'app/img/confort/8.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Confort</h4>
+        <p class="card-text">Papel higiénico Dúo 4 un. 22 + 4 m c/u<br>Precio: $1.090</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+<!--Footer-->
+<footer class="page-footer" id="footers" style="background-color: #DD4A48;">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text"><b>Acerca de Almacen YUYITOS</b></h5>
+        <a href="{% url 'quienessomos' %}"><p class="grey-text text-lighten-4"><H6 style="color: white;">¿Quienes Somos?</H6></p></a>
+        <a href=""><p class="grey-text text-lighten-4"><H6 style="color: white;">Términos y condiciones</H6></p></a>
+        <a href=""><p class="grey-text text-lighten-4"><H6 style="color: white;">Politica de privacidad</H6></p></a>
+        <a href=""><p class="grey-text text-lighten-4"><H6 style="color: white;">Información legal</H6></p></a>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">¡Síguenos en instagram!</h5>
+        <ul>
+          <li><a class="fa fa-instagram" href="https://www.instagram.com/almacenyuyitos/" style="color: white; font-size: 20px;"></a></a>
+          <br><br><h5 class="white-text">¡Medios de Pago! <br> <br><p>- RedCompra <br><br></p></h5></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2022 Copyright Pagina Web
+    <a class="grey-text text-lighten-4 right" href="https://wa.me/+56994888066">¡Contáctanos!&nbsp;&nbsp;<p class="fa fa-whatsapp"></p></a>
+    </div>
+  </div>
+
+</footer>
+</body>
+
+</html>

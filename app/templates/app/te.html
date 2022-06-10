@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+</head>
+
+<!--Navbar-->
+<nav>
+  <div class="nav-wrapper" style="background-color: #DD4A48;">
+    <a href="{% url 'home' %}" class="brand-logo"><i class="material-icons" style="font-style: normal;"><img src="{% static 'app/img/2.png' %}" alt=""></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="{% url 'busqueda' %}"><i class="fa fa-search" style="font-size: medium;"></i></a></li>
+      <li><a href="{% url 'InicioSesion' %}" style="font-size: medium; font-style: normal;">Iniciar Sesion</a></li>
+      <li><a href="{% url 'productos' %}" style="font-size: medium; font-style: normal;">Catálogo</a></li>
+      <li><a href="{% url 'carritodecompras' %}"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+    </ul>
+  </div>
+</nav>
+<!--Fondo de la página-->
+<br><br><br><br>
+<p style="text-align: center;"><img src="{% static 'app/img/logoscatalogo/tete.png' %}" alt=""></p>
+<body style="background-image: url({% static 'app/img/fondotester.jpg' %});" >
+    
+  <br><br><br><b><br><br> 
+    <div class="card" style="padding: 20px;width: 300px; left: 110px; position: absolute;">
+      <img class="card-img-top" src="{% static 'app/img/te/1.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">China Te Verde</h4>
+        <p class="card-text">Té verde chino 20 bolsas<br>Precio: $1.149</p><br>
+        <a href="#" class="btn btn-danger" style="left: 40px;">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 750px;position: absolute;" >
+      <img class="card-img-top" src="{% static 'app/img/te/2.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">English Tea Shop</h4>
+        <p class="card-text">Te chai negro ets 8 bolsas<br>Precio: $1.599</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 430px; ">
+      <img class="card-img-top" src="{% static 'app/img/te/3.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Supremo</h4>
+        <p class="card-text">Té ceylán premium 200 g 100 un.<br>Precio: $3.399</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 1070px;bottom: 462px; ">
+      <img class="card-img-top" src="{% static 'app/img/te/4.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Mildred Tea</h4>
+        <p class="card-text">Té Ceylán caja 100 bolsitas 200 g<br>Precio: $2.109</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <br><br>
+    <div class="card" style="padding: 20px;width: 300px; left: 110px;bottom: 485px;  ">
+      <img class="card-img-top" src="{% static 'app/img/te/5.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Supremo</h4>
+        <p class="card-text">Té en bolsitas 50 un. premium negro 100 g<br>Precio: $1.839</p><br>
+        <a href="#" class="btn btn-danger" style="left: 40px;">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 750px;bottom: 950px; " >
+      <img class="card-img-top" src="{% static 'app/img/te/6.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Superior</h4>
+        <p class="card-text">Té en hojas ceylán bolsa 250 g<br>Precio: $2.329</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 430px;bottom: 1412px; ">
+      <img class="card-img-top" src="{% static 'app/img/te/7.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Mildred Tea</h4>
+        <p class="card-text">Té Ceylán bolsa 250 g<br>Precio: $2.099</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+    <div class="card" style="padding: 20px;width: 300px; left: 1070px;bottom: 1875px; ">
+      <img class="card-img-top" src="{% static 'app/img/te/8.png' %}" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Supremo</h4>
+        <p class="card-text">Té mystic ceylán 80 bolsitas<br>Precio: $2.839</p><br>
+        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+      </div>
+    </div>
+<!--Footer-->
+<footer class="page-footer" id="footers" style="background-color: #DD4A48;">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text"><b>Acerca de Almacen YUYITOS</b></h5>
+        <a href="{% url 'quienessomos' %}"><p class="grey-text text-lighten-4"><H6 style="color: white;">¿Quienes Somos?</H6></p></a>
+        <a href=""><p class="grey-text text-lighten-4"><H6 style="color: white;">Términos y condiciones</H6></p></a>
+        <a href=""><p class="grey-text text-lighten-4"><H6 style="color: white;">Politica de privacidad</H6></p></a>
+        <a href=""><p class="grey-text text-lighten-4"><H6 style="color: white;">Información legal</H6></p></a>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">¡Síguenos en instagram!</h5>
+        <ul>
+          <li><a class="fa fa-instagram" href="https://www.instagram.com/almacenyuyitos/" style="color: white; font-size: 20px;"></a></a>
+          <br><br><h5 class="white-text">¡Medios de Pago! <br> <br><p>- RedCompra <br><br></p></h5></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2022 Copyright Pagina Web
+    <a class="grey-text text-lighten-4 right" href="https://wa.me/+56994888066">¡Contáctanos!&nbsp;&nbsp;<p class="fa fa-whatsapp"></p></a>
+    </div>
+  </div>
+
+</footer>
+</body>
+
+</html>
