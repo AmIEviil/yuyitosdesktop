@@ -10,7 +10,7 @@
     {% load static %}
     {% block css %}
     {% endblock %}
-    <link rel="stylesheet" href="{% static  'app/css/base.css' %}">
+    <link rel="stylesheet" href="{% static  'app/css/estilo.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -22,27 +22,29 @@
 
 <!--Navbar-->
 
-<nav>
-    <div class="nav-wrapper" style="background-color: #DD4A48;">
-        <a href="{% url 'home' %}" class="brand-logo"><i class="material-icons" style="font-style: normal;"><img
-                    src="{% static 'app/img/2.png' %}" alt=""></a>
-        <ul class="buscar">
-            
-            <li><a href="{% url 'busqueda' %}"><i class="fa fa-search" style="font-size: medium;"></i></a></li>
-            <li><a href="{% url 'catalogo' %}" style="font-size: medium; font-style: normal;">Catálogo</a></li>
-            <li><a href="{% url 'productos' %}" style="font-size: medium; font-style: normal;">Productos</a></li>
-            <li><a href="{% url 'InicioSesion' %}" style="font-size: medium; font-style: normal;">Iniciar Sesión</a></li>
-            {% if user.is_authenticated %}
-            <li><a href="{% url 'carritodecompras' %}"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
-            {% endif %}
-        </ul>
-    </div>
-</nav>
-
-<br><br>
-<!--Fondo de la página-->
-
 <body style="background-image: url({% static 'app/img/fondotester.jpg' %})">
+    <header>
+        <div class="contedor">
+            <a href="{% url 'home' %}" class="brand-logo"><i class="material-icons"><img
+                        src="{% static 'app/img/2.png' %}" alt="" ></a>
+            <nav class="menu">
+                <div class="buscar">
+                    <input class="form-control me-2" type="search" placeholder="Producto" aria-label="Search">
+                </div>
+                
+                <a href="{% url 'catalogo' %}">Catálogo</a>
+                <a href="{% url 'productos' %}">Productos</a>
+                <a href="{% url 'InicioSesion' %}">Iniciar</a>
+                {% if user.is_authenticated %}
+                <a href="{% url 'carritodecompras' %}"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+                {% endif %}
+            </nav>
+        </div>
+    </header>
+    <br><br><br><br><br><br><br><br>
+    <!--Fondo de la página-->
+
+
     {% block contenido %}
 
     {% endblock %}
