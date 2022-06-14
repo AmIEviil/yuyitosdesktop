@@ -2,16 +2,21 @@
 
 {% load static %}
 {% block css %}
+{% endblock %}
+{% block contenido %}
 
-<div class="card" style="padding: 20px;width: 300px; left: 110px; position: absolute;">
-  <img class="card-img-top" src="{% static 'app/img/awa/1.png' %}" alt="Card image" style="width:100%">
-  <div class="card-body">
-    <h4 class="card-title">Benedictino</h4>
-    <p class="card-text">Agua purificada con gas 1.5 L<br>Precio: $740</p><br>
-    <a href="#" class="btn btn-danger" style="left: 40px;">Añadir al Carrito</a>
-  </div>
-</div>
+{% for reg in productos %}
 
+<article> <input type="text" value="{{reg.data.0}}" hidden>
+  <a href="#p.data.0">
+    {% if reg.img_producto %}
+    {% endif%}
+    <h4>{{reg.data.1}}</h4>
+
+  </a>
+</article>
+
+{% endfor %}
 {% endblock contenido %}
 {% block js %}
 

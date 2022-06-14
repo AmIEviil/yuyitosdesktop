@@ -157,7 +157,7 @@ class Producto(models.Model):
     id_recepcion = models.ForeignKey('RecepcionProducto', models.DO_NOTHING, db_column='id_recepcion')
     stock = models.FloatField()
     barcode = models.FloatField()
-    img_tipo = models.BinaryField(blank=True, null=True)
+    img_producto = models.BinaryField(blank=True, null=True)
 
     class Meta:
         managed = False

@@ -7,14 +7,14 @@
 {% block contenido %}
 <section id="categorias">
   <div class="contenedor">
-    {% for c in categorias %}
+    {% for p in productos %}
 
-    <article> <a href="{% url 'home' %}">
-        {% if c.img_tipo %}
-        <img src="data:img_tipo/png;base64, {{c.img_tipo}}" width="100px" height="100px" alt="">
+    <article> <a href="/vista_prod/{{p.data.0}}">
+        {% if p.img_producto %}
+        <img src="data:img_producto/png;base64, {{p.img_producto}}" width="100px" height="100px" alt="">
         {% endif%}
-        <h4>{{c.data.1}}</h4>
-        <input type="text" value="{{c.data.0}}" hidden>
+        <h4>{{p.data.1}}</h4>
+        <input type="text" value="{{p.data.0}}" hidden>
       </a>
     </article>
 
