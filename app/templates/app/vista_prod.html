@@ -1,0 +1,18 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+{% block css %}
+
+<div class="card" style="padding: 20px;width: 300px; left: 110px; position: absolute;">
+  <img class="card-img-top" src="{% static 'app/img/awa/1.png' %}" alt="Card image" style="width:100%">
+  <div class="card-body">
+    <h4 class="card-title">Benedictino</h4>
+    <p class="card-text">Agua purificada con gas 1.5 L<br>Precio: $740</p><br>
+    <a href="#" class="btn btn-danger" style="left: 40px;">Añadir al Carrito</a>
+  </div>
+</div>
+
+{% endblock contenido %}
+{% block js %}
+
+{% endblock js %}

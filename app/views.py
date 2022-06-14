@@ -6,8 +6,9 @@ import base64
 from django.template import base
 
 
-def aguamineral(request):
-    return render(request, 'app/aguamineral.html')
+def vista_prod(request,id_prod):
+
+    return render(request, 'app/vista_prod.html')
 
 def arroz(request):
     return render(request, 'app/arroz.html')
@@ -156,3 +157,16 @@ def listado_Tipo_Productos():
         lista.append(fila)
 
     return lista
+#
+#def listado_Prod_id():
+#    django_cursor = connection.cursor()
+#    cursor = django_cursor.connection.cursor()
+#    out_cur = django_cursor.connection.cursor()
+
+#    cursor.callproc("SP_LISTAR_PRODUC_ID", [out_cur])
+#
+#    lista = []
+#    for fila in out_cur:
+#        lista.append(fila)
+
+#    return lista

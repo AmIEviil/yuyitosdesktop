@@ -1,10 +1,10 @@
 from django.urls import path
-from .views import catalogo,delivery,home,aguamineral,arroz,bebidas,busqueda,cafe,carritodecompras,chocolate,confort,desodoranteamb,detergente,dulceambroso,fiado,fideos,galleta,huevosdepascua,InicioSesion,jugos,lavaloza,leche,maruchan,mediosdepago,pastadedientes,productos,quienessomos,registrarse,salsatomate,te,yoghurt          
+from .views import catalogo,delivery,home,vista_prod,arroz,bebidas,busqueda,cafe,carritodecompras,chocolate,confort,desodoranteamb,detergente,dulceambroso,fiado,fideos,galleta,huevosdepascua,InicioSesion,jugos,lavaloza,leche,maruchan,mediosdepago,pastadedientes,productos,quienessomos,registrarse,salsatomate,te,yoghurt          
 
 
 urlpatterns = [
     path('', home, name="home"),
-    path('aguamineral/', aguamineral, name="aguamineral"),
+    path('vista_prod/<id_prod>/', vista_prod, name="vista_prod"),
     path('arroz/', arroz, name="arroz"),
     path('bebidas/', bebidas, name="bebidas"),
     path('busqueda/', busqueda, name="busqueda"),
